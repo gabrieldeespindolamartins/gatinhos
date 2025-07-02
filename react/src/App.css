@@ -22,3 +22,14 @@ img {
   object-fit: contain;
   margin-top: 20px; /* Espaço entre o texto e a imagem */
 }
+
+.blinking-cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
